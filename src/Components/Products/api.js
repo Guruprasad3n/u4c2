@@ -24,6 +24,16 @@
 //  orderBy
 //  limit
 
+
+// function getData(){
+//   return fetch(`https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products?page=${page}`).then(res=>{
+//     return res.json()
+//   })
+// }
+
+
 export const getProducts = ({}) => {
-  return fetch(`url`);
+  return fetch(`https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products`).then((res)=>{
+    return res.json()
+  });
 };
